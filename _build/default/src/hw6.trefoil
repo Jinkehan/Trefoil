@@ -1,0 +1,12 @@
+(define (factorial n)
+  (cond
+    ((= n 0) 1)
+    (true (* n (factorial (- n 1))))))
+
+(define (sum l)
+  (cond
+    ((nil? l) 0)
+    (true (+ (car l) (sum (cdr l))))))
+
+(factorial 5)
+(sum nil)
